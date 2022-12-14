@@ -1,0 +1,354 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Cabin", sans-serif;
+}
+
+.container {
+  max-width: 60%;
+  margin: 0 auto;
+}
+
+body {
+  height: 1700px;
+}
+body img {
+  width: 100%;
+  height: 80px;
+}
+
+header {
+  width: 100%;
+  height: auto;
+  align-items: center;
+  background-color: #00193c;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.4);
+  background-image: url(./image/header.webp);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+header .header {
+  display: flex;
+  height: 45px;
+  justify-content: space-between;
+  align-items: center;
+}
+header .header .logo a {
+  width: 100%;
+  text-decoration: none;
+  font-size: 40px;
+  font-weight: 600;
+}
+header .header .logo a::after {
+  content: "";
+  display: inline-block;
+  background-image: url(./image/xb64.webp);
+  width: 35px;
+  height: 35px;
+  background-size: cover;
+  margin-left: 10px;
+}
+header .header .social {
+  display: flex;
+  height: 45px;
+  justify-content: space-between;
+  align-items: center;
+}
+header .header .social input {
+  background-color: #00193c;
+  height: 30px;
+}
+header .header .social button {
+  background-color: #00193c;
+}
+header .header .social .header-right {
+  position: relative;
+}
+header .header .social .header-right button {
+  position: absolute;
+  right: 42px;
+  top: 7px;
+}
+header .header .social .header-right input {
+  text-indent: 10px;
+}
+header .header a, header .header input {
+  color: white;
+  margin-left: 10px;
+}
+header .header a i, header .header input i {
+  font-size: 20px;
+}
+header .header i {
+  color: white;
+}
+header .header .header-right {
+  background-color: #00193c;
+  background-image: url(./image/header.webp);
+}
+header .header .header-right input {
+  border: 1px solid white;
+}
+header .header .header-right button {
+  border: none;
+}
+header .header .header-right button::after {
+  content: icon;
+}
+header .header .mobile-menu {
+  display: none;
+}
+header .header .mobile-menu nav ul {
+  position: absolute;
+  top: 45px;
+  left: 0;
+  width: 200px;
+  height: 600px;
+}
+header .header .mobile-menu nav ul li {
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+  background-color: #00193c;
+  background-image: url(./image/header.webp);
+  height: 60px;
+  align-items: center;
+  padding-top: 15px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.222);
+}
+header .nav-bar {
+  background-color: #222;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.4);
+}
+header .nav-bar ul {
+  display: flex;
+  height: 45px;
+  justify-content: space-between;
+  align-items: center;
+}
+header .nav-bar ul li {
+  list-style-type: none;
+}
+header .nav-bar ul li a, header .nav-bar ul li i {
+  text-decoration: none;
+  color: white;
+  list-style-type: none;
+}
+
+.cards {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.cards .main-card {
+  width: 623px;
+  height: 460px;
+  position: relative;
+}
+.cards .main-card figure img {
+  max-width: 100%;
+  height: 460px;
+}
+.cards .main-card figure span {
+  width: 50%;
+  height: 50px;
+  align-items: center;
+  padding-top: 10px;
+  text-align: left;
+  font-weight: 700;
+  color: white;
+  background-color: rgba(24, 148, 160, 0.8);
+  position: absolute;
+  left: 0;
+  bottom: 150px;
+}
+.cards .main-card figure p {
+  background-color: rgba(34, 34, 34, 0.942);
+  width: 100%;
+  height: 74px;
+  align-items: center;
+  padding-top: 12px;
+  font-weight: 500;
+  font-size: 25px;
+  color: white;
+  text-indent: 20px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.cards .main-card figure .right {
+  position: absolute;
+  top: 150px;
+  right: 30px;
+  color: white;
+  font-size: 80px;
+  cursor: pointer;
+}
+.cards .main-card figure .left {
+  position: absolute;
+  top: 150px;
+  left: 30px;
+  color: white;
+  font-size: 80px;
+  cursor: pointer;
+}
+.cards .second-card {
+  width: 300px;
+  height: 460px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  display: block;
+}
+.cards .second-card figure img {
+  width: 100%;
+  height: 228px;
+}
+
+.news {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+}
+.news figure {
+  margin: 5px;
+  width: 290px;
+  height: 430px;
+  background-color: white;
+  border: 1px solid rgba(128, 128, 128, 0.275);
+  position: relative;
+}
+.news figure img {
+  width: 100%;
+  height: 200px;
+}
+.news figure figcaption {
+  color: #13317f;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.5;
+  height: 180px;
+  text-align: left;
+  padding: 40px 0 0 20px;
+}
+.news figure .date {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  width: 20%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.news figure .date .month {
+  background-color: rgba(24, 148, 160, 0.8);
+  height: 40px;
+  padding: 2px 5px 5px 12px;
+}
+.news figure .date .time {
+  background-color: #334564;
+  text-align: center;
+}
+.news figure .card-bottom {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 1px solid #aaa;
+  color: #aaa;
+  font-weight: 200;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+}
+.news figure .card-bottom .like {
+  width: 100%;
+  height: 43px;
+  border: none;
+  background-color: white;
+  color: #aaa;
+  border-right: 1px solid #aaa;
+  text-align: center;
+  padding-top: 10px;
+}
+.news figure .card-bottom .like:hover {
+  background-color: green;
+  color: white;
+}
+.news figure .card-bottom .unlike {
+  width: 100%;
+  height: 43px;
+  border: none;
+  background-color: white;
+  color: #aaa;
+  border-right: 1px solid #aaa;
+  text-align: center;
+  padding-top: 10px;
+}
+.news figure .card-bottom .unlike:hover {
+  background-color: red;
+  color: white;
+}
+.news figure .card-bottom .eyes {
+  width: 100%;
+  height: 43px;
+  border: none;
+  background-color: white;
+  color: #aaa;
+  border-right: 1px solid #aaa;
+  padding-top: 10px;
+}
+.news figure:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+@media screen and (max-width: 768px) {
+  body .banner {
+    display: none;
+  }
+  .header .logo a {
+    display: inline-block;
+  }
+  .header a {
+    display: none;
+  }
+  .header .header-right input {
+    display: none;
+  }
+  .header .header-right button {
+    display: inline-block;
+  }
+  .header .header-right a {
+    display: inline-block;
+  }
+  .header .mobile-menu {
+    display: inline-block !important;
+  }
+  .header .mobile-menu i {
+    display: inline-block !important;
+  }
+  .header .mobile-menu ul {
+    display: none;
+  }
+  .nav-bar {
+    display: none;
+  }
+  .cards {
+    background-color: yellow;
+  }
+  .cards .main-card {
+    display: inline-block;
+  }
+  .cards .main-card figure img {
+    width: 100%;
+  }
+  .cards .second-card {
+    display: none !important;
+  }
+}/*# sourceMappingURL=style.css.map */
